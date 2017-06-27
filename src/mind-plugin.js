@@ -1,9 +1,9 @@
 import {bindable} from 'aurelia-framework';
 
 export class MindPlugin {
-	@bindable value;
+	@bindable passInVal;
 	constructor () {
-		this.value = '';
+		this.passInVal = '...';
 		this.firstNum = 0;
 		this.secondNum = 0;
 		this.result = 0;

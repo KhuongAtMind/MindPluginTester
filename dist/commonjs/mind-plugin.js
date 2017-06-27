@@ -58,9 +58,9 @@ var MindPlugin = exports.MindPlugin = (_class = function () {
 	function MindPlugin() {
 		_classCallCheck(this, MindPlugin);
 
-		_initDefineProp(this, 'value', _descriptor, this);
+		_initDefineProp(this, 'passInVal', _descriptor, this);
 
-		this.value = '';
+		this.passInVal = '...';
 		this.firstNum = 0;
 		this.secondNum = 0;
 		this.result = 0;
@@ -83,7 +83,7 @@ var MindPlugin = exports.MindPlugin = (_class = function () {
 	};
 
 	return MindPlugin;
-}(), (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'value', [_aureliaFramework.bindable], {
+}(), (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'passInVal', [_aureliaFramework.bindable], {
 	enumerable: true,
 	initializer: null
 })), _class);

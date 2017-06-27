@@ -47,9 +47,9 @@ import { bindable } from 'aurelia-framework';
 
 export let MindPlugin = (_class = class MindPlugin {
 	constructor() {
-		_initDefineProp(this, 'value', _descriptor, this);
+		_initDefineProp(this, 'passInVal', _descriptor, this);
 
-		this.value = '';
+		this.passInVal = '...';
 		this.firstNum = 0;
 		this.secondNum = 0;
 		this.result = 0;
@@ -70,7 +70,7 @@ export let MindPlugin = (_class = class MindPlugin {
 	divide() {
 		this.result = Number(this.firstNum) / Number(this.secondNum);
 	}
-}, (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'value', [bindable], {
+}, (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'passInVal', [bindable], {
 	enumerable: true,
 	initializer: null
 })), _class);
