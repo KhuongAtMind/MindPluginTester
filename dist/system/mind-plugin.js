@@ -63,13 +63,17 @@ System.register(['aurelia-framework'], function (_export, _context) {
 				function MindPlugin() {
 					_classCallCheck(this, MindPlugin);
 
-					_initDefineProp(this, 'passInVal', _descriptor, this);
+					_initDefineProp(this, 'passedInVal', _descriptor, this);
 
-					this.passInVal = '...';
+					this.passedValue = '...';
 					this.firstNum = 0;
 					this.secondNum = 0;
 					this.result = 0;
 				}
+
+				MindPlugin.prototype.passedInValChanged = function passedInValChanged(value) {
+					this.passedValue = value;
+				};
 
 				MindPlugin.prototype.add = function add() {
 					this.result = Number(this.firstNum) + Number(this.secondNum);
@@ -88,7 +92,7 @@ System.register(['aurelia-framework'], function (_export, _context) {
 				};
 
 				return MindPlugin;
-			}(), (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'passInVal', [bindable], {
+			}(), (_descriptor = _applyDecoratedDescriptor(_class.prototype, 'passedInVal', [bindable], {
 				enumerable: true,
 				initializer: null
 			})), _class));
