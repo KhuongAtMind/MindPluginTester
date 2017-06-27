@@ -1,5 +1,5 @@
 {
-  "name": "mind-plugins",
+  "name": "mind-plugin",
   "version": "1.0.1",
   "description": "An example for aurelia plugin for mind console",
   "keywords": [
