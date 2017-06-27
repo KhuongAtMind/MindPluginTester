@@ -1,0 +1,28 @@
+<template>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			This is a MIND Plugin Example
+		</div>
+		<div class="panel-body">
+			<div style="margin: 10px">
+				<div class="input-group" style="margin-bottom: 10px; width: 100%;">
+				 	<span class="input-group-addon" style="width: 130px">First Number</span>
+					<input type="text" value.bind="firstNum" class="form-control">
+				</div>
+				<div class="input-group" style="width: 100%;">
+				 	<span class="input-group-addon" style="width:130px">Second Number</span>
+					<input type="text" value.bind="secondNum" class="form-control">
+				</div>
+		    </div>
+		    <div style="margin: 10px">
+				<button type="button" class="btn btn-success" click.trigger="add()"> + </button>
+				<button type="button" class="btn btn-primary" click.trigger="subtract()"> - </button>
+				<button type="button" class="btn btn-info" click.trigger="multiply()"> * </button>
+				<button type="button" class="btn btn-warning" click.trigger="divide()"> / </button>
+		    </div>
+			<div class="alert alert-success" style="margin: 10px" role="alert">
+				<b>Result</b> ${result}
+			</div>
+		<div>
+	</div>
+</template>
