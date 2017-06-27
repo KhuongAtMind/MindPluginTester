@@ -6,6 +6,6 @@ define(['exports'], function (exports) {
   });
   exports.configure = configure;
   function configure(config) {
-    config.globalResources('./mind-plugin-too');
+    config.globalResources(['./mind-plugin', './mind-plugin-too']);
   }
 });
