@@ -10,6 +10,7 @@ export class MindPlugin {
 	}
 
 	passedInValChanged (value) {
+		console.log('passed in value changed', value);
 		this.passedValue = value;
 	}
 

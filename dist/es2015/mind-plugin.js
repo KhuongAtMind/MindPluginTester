@@ -56,6 +56,7 @@ export let MindPlugin = (_class = class MindPlugin {
 	}
 
 	passedInValChanged(value) {
+		console.log('passed in value changed', value);
 		this.passedValue = value;
 	}
 

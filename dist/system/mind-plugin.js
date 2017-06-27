@@ -72,6 +72,7 @@ System.register(['aurelia-framework'], function (_export, _context) {
 				}
 
 				MindPlugin.prototype.passedInValChanged = function passedInValChanged(value) {
+					console.log('passed in value changed', value);
 					this.passedValue = value;
 				};
 

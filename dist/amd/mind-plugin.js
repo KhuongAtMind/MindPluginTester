@@ -70,6 +70,7 @@ define(['exports', 'aurelia-framework'], function (exports, _aureliaFramework) {
 		}
 
 		MindPlugin.prototype.passedInValChanged = function passedInValChanged(value) {
+			console.log('passed in value changed', value);
 			this.passedValue = value;
 		};
 

@@ -67,6 +67,7 @@ var MindPlugin = exports.MindPlugin = (_class = function () {
 	}
 
 	MindPlugin.prototype.passedInValChanged = function passedInValChanged(value) {
+		console.log('passed in value changed', value);
 		this.passedValue = value;
 	};
 
