@@ -65,16 +65,11 @@ System.register(['aurelia-framework'], function (_export, _context) {
 
 					_initDefineProp(this, 'passedInVal', _descriptor, this);
 
-					this.passedValue = '...';
+					this.passedInVal = '...';
 					this.firstNum = 0;
 					this.secondNum = 0;
 					this.result = 0;
 				}
-
-				MindPlugin.prototype.passedInValChanged = function passedInValChanged(value) {
-					console.log('passed in value changed', value);
-					this.passedValue = value;
-				};
 
 				MindPlugin.prototype.add = function add() {
 					this.result = Number(this.firstNum) + Number(this.secondNum);

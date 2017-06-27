@@ -3,15 +3,10 @@ import {bindable} from 'aurelia-framework';
 export class MindPlugin {
 	@bindable passedInVal;
 	constructor () {
-		this.passedValue = '...';
+		this.passedInVal = '...';
 		this.firstNum = 0;
 		this.secondNum = 0;
 		this.result = 0;
-	}
-
-	passedInValChanged (value) {
-		console.log('passed in value changed', value);
-		this.passedValue = value;
 	}
 
 	add () {

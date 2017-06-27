@@ -49,15 +49,10 @@ export let MindPlugin = (_class = class MindPlugin {
 	constructor() {
 		_initDefineProp(this, 'passedInVal', _descriptor, this);
 
-		this.passedValue = '...';
+		this.passedInVal = '...';
 		this.firstNum = 0;
 		this.secondNum = 0;
 		this.result = 0;
-	}
-
-	passedInValChanged(value) {
-		console.log('passed in value changed', value);
-		this.passedValue = value;
 	}
 
 	add() {
