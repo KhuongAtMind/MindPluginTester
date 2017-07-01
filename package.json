@@ -12,7 +12,6 @@
     "url": "https://github.com/KhuongAtMind/MindPluginTester"
   },
   "dependencies": {
-    "first-plugin": "./plugins/first-plugin/dist/*"
   },
   "devDependencies": {},
   "jspm": {
